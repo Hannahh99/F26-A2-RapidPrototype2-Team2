@@ -37,6 +37,11 @@ public class Player : MonoBehaviour
     //create spawn location for player on death
     public Transform spawn;
 
+    //call scene manager
+    Scene scene;
+    //assign a string variable to current scene
+    string sceneName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -151,13 +156,29 @@ public class Player : MonoBehaviour
         return check;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collider)
     {
 
-        if (collision.gameObject.CompareTag("Door"))
+        if (collider.gameObject.CompareTag("Door"))
         {
-            SceneManager.LoadScene("WinScene");
-            Debug.Log("is colliding");
+            if(sceneName == "Level 1")
+            {
+                SceneManager.LoadScene("Level 2");
+                Debug.Log("is colliding");
+            }
+
+            if (sceneName == "Level 2")
+            {
+                SceneManager.LoadScene("CodeTesting");
+                Debug.Log("is colliding");
+            }
+
+            if (sceneName == "CodeTesting")
+            {
+                SceneManager.LoadScene("WinScreen");
+                Debug.Log("is colliding");
+            }
+
         }
 
     }
