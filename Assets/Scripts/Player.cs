@@ -156,15 +156,19 @@ public class Player : MonoBehaviour
         return check;
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collider.gameObject.CompareTag("Door"))
+        if (collision.gameObject.CompareTag("Door"))
         {
-            if(sceneName == "Level 1")
+            //Debug.Log("Is Colliding)");
+            scene = SceneManager.GetActiveScene();
+            sceneName = scene.name;
+
+            if (sceneName == "Level 1")
             {
+                Debug.Log("Is Colliding)");
                 SceneManager.LoadScene("Level 2");
-                Debug.Log("is colliding");
             }
 
             if (sceneName == "Level 2")
