@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
 
     //create spawn location for player on death
-    //public Transform spawn;
+    public Transform spawn;
 
     // Start is called before the first frame update
     void Start()
@@ -153,24 +153,21 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Spike"))
+
+        if (collision.gameObject.CompareTag("Door"))
+        {
+            SceneManager.LoadScene("WinScene");
+            Debug.Log("is colliding");
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             spawnPoint();
         }
-
-        if (collision.gameObject.CompareTag("Border"))
-        {
-            spawnPoint();
-        }
-
-       // if (collision.gameObject.CompareTag("Coin"))
-       // {
-         //   lifePoints = 3;
-        //}
-
-       // lifePoints--;
-       // updateLife();
-       // gameOver();
     }
     private void spawnPoint()
     {
@@ -181,20 +178,8 @@ public class Player : MonoBehaviour
         }
 
         // Move the player to the spawn point's position and rotation
-        //transform.position = spawn.position;
-        //transform.rotation = spawn.rotation;
+        transform.position = spawn.position;
+        transform.rotation = spawn.rotation;
     }
 
-    void updateLife()
-    {
-       // lifeText.text = "Current Lives: " + lifePoints;
-    }
-
-    void gameOver()
-    {
-       // if (lifePoints == 0)
-        //{
-         //   SceneManager.LoadScene("Gameover");
-        //}
-    }
 }
