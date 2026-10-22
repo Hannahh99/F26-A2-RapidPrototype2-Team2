@@ -173,15 +173,15 @@ public class Player : MonoBehaviour
 
             if (sceneName == "Level 2")
             {
-                SceneManager.LoadScene("CodeTesting");
+                SceneManager.LoadScene("WinScene");
                 Debug.Log("is colliding");
             }
 
-            if (sceneName == "CodeTesting")
-            {
-                SceneManager.LoadScene("WinScreen");
-                Debug.Log("is colliding");
-            }
+           // if (sceneName == "CodeTesting")
+            //{
+              //  SceneManager.LoadScene("WinScreen");
+                //Debug.Log("is colliding");
+            //}
 
         }
 
