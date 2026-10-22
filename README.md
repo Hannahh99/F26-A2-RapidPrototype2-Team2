@@ -3,6 +3,6 @@ Game Design rapid prototype 2 team project.
 
 Controls:
 
-'A' to move left
-'D' to move right
-'SPACEBAR' to jump
+- 'A' to move left
+- 'D' to move right
+- 'SPACEBAR' to jump
