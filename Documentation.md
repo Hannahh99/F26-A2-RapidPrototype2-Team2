@@ -26,6 +26,8 @@ In future levels, the game may feature additional obstacles to make levels harde
 
 Our game is innovative in which it challenges the classic platformer by adding a puzzle element that players must overcome to reach the end. Players need to use logic in addition to being able to complete any movement challenges.
 
+![[EnemyEvadePrototype_LevelExampleVisual.png]]
+
 # Asset Register
 
 ---
