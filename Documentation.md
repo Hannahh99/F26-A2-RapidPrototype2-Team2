@@ -97,3 +97,10 @@ Primary player inputs are movement and jumping. Players should not experience mu
 Audio is not currently a developed focus of this prototype, but future iterations could introduce sound effects for events like jumping, landing, or colliding with hazards, and completing a level. 
 
 A sound track may also be considered in future iterations, with background music to better establish atmosphere, provided it does not distract from the central gameplay and puzzle solving.
+
+
+# World
+
+---
+
+The world of Efmos is riddled with mimics. These creatures copy the visages of all around them, often mirroring the movements of its prey trying to catch them off guard. Not only are these creatures incredible smart but they seem capable of adapting to any environment. To combat these entities people are taught from birth to be cautious of all around them, taking special note of even those closest to you. While plagued for centuries by distrust and distraught a shift begins when a group under the name the knights of Skahl mysteriously appears. Equipped with high knowledge of the creatures and skills to combat their deception, they travel looking for areas with high infestations.

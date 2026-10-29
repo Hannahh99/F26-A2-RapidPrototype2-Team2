@@ -55,7 +55,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        //Local variable of type float to store the horizontal input
+        //
+        //Use the - operater to reverge player Axis
         float h = -Input.GetAxis("Horizontal");
 
         //Call the MoveCharacter function and send it the value
@@ -116,7 +117,7 @@ public class Enemy : MonoBehaviour
     void MoveCharacter(float hMove)
     {
         //Now that we have that information, apply it to the rb2d
-        //to make the character move!
+        //to make the character move
 
         //A vector is a representation of direction/rotation/scale
         //(x, y, z). Velocity is a vector!

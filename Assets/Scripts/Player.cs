@@ -162,7 +162,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Door"))
         {
             //Debug.Log("Is Colliding)");
+            //assign Scene variable scene to GetActiveScene
             scene = SceneManager.GetActiveScene();
+            //Assign scene to string sceneName
             sceneName = scene.name;
 
             if (sceneName == "Level 1")
